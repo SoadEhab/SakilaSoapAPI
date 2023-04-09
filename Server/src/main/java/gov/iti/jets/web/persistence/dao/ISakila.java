@@ -37,12 +37,10 @@ public class ISakila{
             return null;
         }
     }
-//////////////////////////////////////////////////////////////
-    public <T> boolean update(T newObject, int id, Class<T> className){
+
+    public <T> boolean update(T newObject){
         if (newObject != null) {
             entityManager.getTransaction().begin();
-//            T object = entityManager.find(className, id);
-
             entityManager.merge(newObject);
             entityManager.getTransaction().commit();
             entityManager.close();

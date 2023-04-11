@@ -11,11 +11,11 @@ import org.modelmapper.TypeToken;
 import java.util.List;
 
 @WebService
-public class FilmServices {
+public class FilmService {
     SakilaContext sakilaContext = new SakilaContext(new FilmDao());
     ModelMapper modelMapper = new ModelMapper();
 
-    public FilmServices() {
+    public FilmService() {
     }
 
     public List<FilmModel> getAllFilms(){
@@ -24,7 +24,11 @@ public class FilmServices {
     }
 
     public FilmModel getFilmById(int id){
-        return modelMapper.map(sakilaContext.getBy("Film.findByFilmId","filmId",id), FilmModel.class);
+        return modelMapper.map(sakilaContext.getById(Film.class,id), FilmModel.class);
+    }
+
+    public List<FilmModel> getFilmByTitle(int id){
+        return modelMapper.map(sakilaContext.getBy("Film.findByTitle","title",id), new TypeToken<List<FilmModel>>(){}.getType());
     }
 
     public FilmModel addFilm(FilmModel filmModel){
@@ -36,6 +40,10 @@ public class FilmServices {
 
     public boolean updateFilm(FilmModel filmModel){
         return sakilaContext.update(modelMapper.map(filmModel, Film.class));
+    }
+
+    public boolean deleteFilm(int id){
+        return sakilaContext.deleteById(id, Film.class);
     }
 
 }

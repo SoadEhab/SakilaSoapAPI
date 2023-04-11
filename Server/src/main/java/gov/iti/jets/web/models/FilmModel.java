@@ -11,6 +11,23 @@ import java.util.Date;
 import java.util.List;
 
 public class FilmModel {
+    private Short filmId;
+    private String title;
+    private String description;
+    private Date releaseYear;
+    private short rentalDuration;
+    private BigDecimal rentalRate;
+    private Short length;
+    private BigDecimal replacementCost;
+    private String rating;
+    private String specialFeatures;
+    private Date lastUpdate;
+    private List<FilmCategory> filmCategoryList;//one to many --> mapped by film
+    private List<FilmActor> filmActorList;//one to many --> mapped by film
+    private List<Inventory> inventoryList;//one to many --> mapped by filmId
+    private Language language;//many to one
+    private Language originalLanguage;//many to one
+
     public Short getFilmId() {
         return filmId;
     }
@@ -138,22 +155,5 @@ public class FilmModel {
     public void setOriginalLanguage(Language originalLanguage) {
         this.originalLanguage = originalLanguage;
     }
-
-    private Short filmId;
-    private String title;
-    private String description;
-    private Date releaseYear;
-    private short rentalDuration;
-    private BigDecimal rentalRate;
-    private Short length;
-    private BigDecimal replacementCost;
-    private String rating;
-    private String specialFeatures;
-    private Date lastUpdate;
-    private List<FilmCategory> filmCategoryList;//one to many --> mapped by film
-    private List<FilmActor> filmActorList;//one to many --> mapped by film
-    private List<Inventory> inventoryList;//one to many --> mapped by filmId
-    private Language language;//many to one
-    private Language originalLanguage;//many to one
 
 }

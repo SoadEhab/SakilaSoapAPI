@@ -28,9 +28,9 @@ public class CustomerModel {
 
     private List<Payment> paymentList;//one to many --> mapped by customerId
 
-    private Address addressId;//many to one
+    private Address addressId;
 
-    private Store storeId;//many to one
+    private Store storeId;
 
     public Short getCustomerId() {
         return customerId;

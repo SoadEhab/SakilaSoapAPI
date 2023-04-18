@@ -26,7 +26,6 @@ public class ISakila{
 
     public <T> List<T> getAll(String namedQuery){
         TypedQuery<T> query = (TypedQuery<T>) entityManager.createNamedQuery(namedQuery);
-
         return query.getResultList();
     }
 
@@ -34,9 +33,9 @@ public class ISakila{
         return (T)entityManager.find(className, id);
     }
 
-    public <T,TP> List<T> getBy(String namedQuery, String paramName, TP id){
+    public <T,TP> List<T> getBy(String namedQuery, String paramName, TP value){
         TypedQuery<T> query = (TypedQuery<T>) entityManager.createNamedQuery(namedQuery);
-        query.setParameter(paramName, id);
+        query.setParameter(paramName, value);
         return query.getResultList();
     }
 

@@ -13,7 +13,6 @@ public class ActorModel {
     private String lastName;
 
     private Date lastUpdate;
-    private List<FilmActor> filmActorList;//one to many --> mapped by actor
 
     public Short getActorId() {
         return actorId;
@@ -47,11 +46,8 @@ public class ActorModel {
         this.lastUpdate = lastUpdate;
     }
 
-    public List<FilmActor> getFilmActorList() {
-        return filmActorList;
-    }
+//    public List<FilmActor> getFilmActorList() {
+//        return filmActorList;
+//    }
 
-    public void setFilmActorList(List<FilmActor> filmActorList) {
-        this.filmActorList = filmActorList;
-    }
 }

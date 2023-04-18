@@ -82,26 +82,26 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
-<!--      <plugin>-->
-<!--        <groupId>org.apache.tomcat.maven</groupId>-->
-<!--        <artifactId>tomcat7-maven-plugin</artifactId>-->
-<!--        <version>2.2</version>-->
-<!--        <configuration>-->
-<!--          <username>admin</username>-->
-<!--          <password>admin</password>-->
-<!--          <url>http://localhost:8090/manager/text</url>-->
-<!--          <path>/</path>-->
-<!--        </configuration>-->
-<!--      </plugin>-->
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.1.0</version>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
         <configuration>
-          <mainClass>gov.iti.jets.web.App</mainClass>
-          <cleanupDaemonThreads>false</cleanupDaemonThreads>
+          <username>admin</username>
+          <password>admin</password>
+          <url>http://localhost:8090/manager/text</url>
+          <path>/</path>
         </configuration>
       </plugin>
+<!--      <plugin>-->
+<!--        <groupId>org.codehaus.mojo</groupId>-->
+<!--        <artifactId>exec-maven-plugin</artifactId>-->
+<!--        <version>3.1.0</version>-->
+<!--        <configuration>-->
+<!--          <mainClass>gov.iti.jets.web.App</mainClass>-->
+<!--          <cleanupDaemonThreads>false</cleanupDaemonThreads>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
     </plugins>
   </build>
 

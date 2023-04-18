@@ -2,6 +2,7 @@ package gov.iti.jets.web;
 
 import gov.iti.jets.web.entities.*;
 import gov.iti.jets.web.models.FilmModel;
+import gov.iti.jets.web.persistence.dao.ActorDao;
 import gov.iti.jets.web.persistence.dao.CustomerDao;
 import gov.iti.jets.web.persistence.dao.SakilaContext;
 import gov.iti.jets.web.services.FilmService;
@@ -47,6 +48,9 @@ public class App {
 //        Language newLand = sakilaContext.add(lang);
 //        System.out.println("added   " + newLand.getLanguageId());
         boolean isDeleted = sakilaContext.deleteById(7,Language.class);
+
+        List<Film> films = new ActorDao().getActorFilms(1);
+        System.out.println("Size "+films.size());
 
     }
 }

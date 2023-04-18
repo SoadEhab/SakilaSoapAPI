@@ -22,9 +22,6 @@ public class FilmModel {
     private String rating;
     private String specialFeatures;
     private Date lastUpdate;
-    private List<FilmCategory> filmCategoryList;//one to many --> mapped by film
-    private List<FilmActor> filmActorList;//one to many --> mapped by film
-    private List<Inventory> inventoryList;//one to many --> mapped by filmId
     private Language language;//many to one
     private Language originalLanguage;//many to one
 
@@ -114,30 +111,6 @@ public class FilmModel {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
-    }
-
-    public List<FilmCategory> getFilmCategoryList() {
-        return filmCategoryList;
-    }
-
-    public void setFilmCategoryList(List<FilmCategory> filmCategoryList) {
-        this.filmCategoryList = filmCategoryList;
-    }
-
-    public List<FilmActor> getFilmActorList() {
-        return filmActorList;
-    }
-
-    public void setFilmActorList(List<FilmActor> filmActorList) {
-        this.filmActorList = filmActorList;
-    }
-
-    public List<Inventory> getInventoryList() {
-        return inventoryList;
-    }
-
-    public void setInventoryList(List<Inventory> inventoryList) {
-        this.inventoryList = inventoryList;
     }
 
     public Language getLanguage() {

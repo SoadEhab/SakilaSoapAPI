@@ -16,7 +16,7 @@ public class AddressService {
     public AddressService() {
     }
 
-    public List<AddressModel> getAllAddress(){
+    public List<AddressModel> getAllAddresses(){
         return modelMapper.map(addressDao.getAll("Address.findAll"), new TypeToken<List<AddressModel>>(){}.getType());
     }
 

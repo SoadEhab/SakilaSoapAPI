@@ -14,7 +14,8 @@ public class CityModel {
     private String city;
 
     private Date lastUpdate;
-    private Country countryId;
+
+//    private Country countryId;
 
     public Short getCityId() {
         return cityId;
@@ -40,11 +41,5 @@ public class CityModel {
         this.lastUpdate = lastUpdate;
     }
 
-    public Country getCountryId() {
-        return countryId;
-    }
 
-    public void setCountryId(Country countryId) {
-        this.countryId = countryId;
-    }
 }

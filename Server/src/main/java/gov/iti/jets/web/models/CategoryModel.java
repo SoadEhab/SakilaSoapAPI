@@ -12,7 +12,7 @@ public class CategoryModel {
     private String name;
 
     private Date lastUpdate;
-    private List<FilmCategory> filmCategoryList;
+
 
     public Short getCategoryId() {
         return categoryId;
@@ -36,13 +36,5 @@ public class CategoryModel {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
-    }
-
-    public List<FilmCategory> getFilmCategoryList() {
-        return filmCategoryList;
-    }
-
-    public void setFilmCategoryList(List<FilmCategory> filmCategoryList) {
-        this.filmCategoryList = filmCategoryList;
     }
 }

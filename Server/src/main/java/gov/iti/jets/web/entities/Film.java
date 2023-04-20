@@ -8,22 +8,8 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-import jakarta.persistence.Basic;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.Lob;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.NamedQueries;
-import jakarta.persistence.NamedQuery;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+
+import jakarta.persistence.*;
 
 /**
  *
@@ -80,17 +66,17 @@ public class Film implements Serializable {
     @Column(name = "last_update")
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastUpdate;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "film")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "film", fetch = FetchType.LAZY)
     private List<FilmCategory> filmCategoryList;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "film")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "film", fetch = FetchType.LAZY)
     private List<FilmActor> filmActorList;
     @JoinColumn(name = "language_id", referencedColumnName = "language_id")
-    @ManyToOne(optional = false)
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Language languageId;
     @JoinColumn(name = "original_language_id", referencedColumnName = "language_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Language originalLanguageId;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "filmId")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "filmId", fetch = FetchType.LAZY)
     private List<Inventory> inventoryList;
 
     public Film() {

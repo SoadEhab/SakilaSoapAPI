@@ -19,9 +19,9 @@ public class StaffModel {
     private String username;
     private String password;
     private Date lastUpdate;
-    private Address addressId;
-    private Store storeId;
-    private Store store;
+//    private Address addressId;
+//    private Store storeId;
+//    private Store store;
 
     public Short getStaffId() {
         return staffId;
@@ -95,27 +95,4 @@ public class StaffModel {
         this.lastUpdate = lastUpdate;
     }
 
-    public Address getAddressId() {
-        return addressId;
-    }
-
-    public void setAddressId(Address addressId) {
-        this.addressId = addressId;
-    }
-
-    public Store getStoreId() {
-        return storeId;
-    }
-
-    public void setStoreId(Store storeId) {
-        this.storeId = storeId;
-    }
-
-    public Store getStore() {
-        return store;
-    }
-
-    public void setStore(Store store) {
-        this.store = store;
-    }
 }

@@ -21,7 +21,7 @@ public class AddressModel {
 
     private Date lastUpdate;
 
-    private City cityId;
+//    private City cityId;
 
     public Short getAddressId() {
         return addressId;
@@ -85,13 +85,5 @@ public class AddressModel {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
-    }
-
-    public City getCityId() {
-        return cityId;
-    }
-
-    public void setCityId(City cityId) {
-        this.cityId = cityId;
     }
 }

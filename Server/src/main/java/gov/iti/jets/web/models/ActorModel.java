@@ -46,8 +46,4 @@ public class ActorModel {
         this.lastUpdate = lastUpdate;
     }
 
-//    public List<FilmActor> getFilmActorList() {
-//        return filmActorList;
-//    }
-
 }

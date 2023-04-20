@@ -17,9 +17,41 @@ public class PaymentModel {
 
     private Date lastUpdate;
 
-    private Customer customerId;
+//    private Customer customerId;
+//
+//    private Rental rentalId;
+//
+//    private Staff staffId;
 
-    private Rental rentalId;
+    public Short getPaymentId() {
+        return paymentId;
+    }
 
-    private Staff staffId;
+    public void setPaymentId(Short paymentId) {
+        this.paymentId = paymentId;
+    }
+
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public Date getPaymentDate() {
+        return paymentDate;
+    }
+
+    public void setPaymentDate(Date paymentDate) {
+        this.paymentDate = paymentDate;
+    }
+
+    public Date getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(Date lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
 }

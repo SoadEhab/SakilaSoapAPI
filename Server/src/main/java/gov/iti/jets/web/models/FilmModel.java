@@ -22,8 +22,8 @@ public class FilmModel {
     private String rating;
     private String specialFeatures;
     private Date lastUpdate;
-    private Language language;//many to one
-    private Language originalLanguage;//many to one
+//    private Language language;//many to one
+//    private Language originalLanguage;//many to one
 
     public Short getFilmId() {
         return filmId;
@@ -111,22 +111,6 @@ public class FilmModel {
 
     public void setLastUpdate(Date lastUpdate) {
         this.lastUpdate = lastUpdate;
-    }
-
-    public Language getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(Language language) {
-        this.language = language;
-    }
-
-    public Language getOriginalLanguage() {
-        return originalLanguage;
-    }
-
-    public void setOriginalLanguage(Language originalLanguage) {
-        this.originalLanguage = originalLanguage;
     }
 
 }

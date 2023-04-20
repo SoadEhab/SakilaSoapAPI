@@ -24,13 +24,9 @@ public class CustomerModel {
 
     private Date lastUpdate;
 
-    private List<Rental> rentalList;//one to many --> mapped by customerId
-
-    private List<Payment> paymentList;//one to many --> mapped by customerId
-
-    private Address addressId;
-
-    private Store storeId;
+//    private Address addressId;
+//
+//    private Store storeId;
 
     public Short getCustomerId() {
         return customerId;
@@ -88,35 +84,4 @@ public class CustomerModel {
         this.lastUpdate = lastUpdate;
     }
 
-    public List<Rental> getRentalList() {
-        return rentalList;
-    }
-
-    public void setRentalList(List<Rental> rentalList) {
-        this.rentalList = rentalList;
-    }
-
-    public List<Payment> getPaymentList() {
-        return paymentList;
-    }
-
-    public void setPaymentList(List<Payment> paymentList) {
-        this.paymentList = paymentList;
-    }
-
-    public Address getAddressId() {
-        return addressId;
-    }
-
-    public void setAddressId(Address addressId) {
-        this.addressId = addressId;
-    }
-
-    public Store getStoreId() {
-        return storeId;
-    }
-
-    public void setStoreId(Store storeId) {
-        this.storeId = storeId;
-    }
 }

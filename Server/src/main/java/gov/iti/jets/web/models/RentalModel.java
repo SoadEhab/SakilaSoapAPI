@@ -16,11 +16,11 @@ public class RentalModel {
 
     private Date lastUpdate;
 
-    private Customer customerId;
-
-    private Inventory inventoryId;
-
-    private Staff staffId;
+//    private Customer customerId;
+//
+//    private Inventory inventoryId;
+//
+//    private Staff staffId;
 
     public Integer getRentalId() {
         return rentalId;
@@ -54,27 +54,4 @@ public class RentalModel {
         this.lastUpdate = lastUpdate;
     }
 
-    public Customer getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(Customer customerId) {
-        this.customerId = customerId;
-    }
-
-    public Inventory getInventoryId() {
-        return inventoryId;
-    }
-
-    public void setInventoryId(Inventory inventoryId) {
-        this.inventoryId = inventoryId;
-    }
-
-    public Staff getStaffId() {
-        return staffId;
-    }
-
-    public void setStaffId(Staff staffId) {
-        this.staffId = staffId;
-    }
 }

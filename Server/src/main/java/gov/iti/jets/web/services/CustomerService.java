@@ -19,7 +19,7 @@ public class CustomerService {
     public CustomerService() {
     }
 
-    public List<CustomerModel> getAllCustomer() {
+    public List<CustomerModel> getAllCustomers() {
         return modelMapper.map(customerDao.getAll("Customer.findAll"), new TypeToken<List<CustomerModel>>() {
         }.getType());
     }

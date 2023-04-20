@@ -1,0 +1,108 @@
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getCustomerById>
+            <arg0>2</arg0>
+        </jets:getCustomerById>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getCustomerByEmail>
+            <arg0>MARY.SMITH@sakilacustomer.org</arg0>
+        </jets:getCustomerByEmail>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getAllCustomers/>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:deleteCustomer>
+            <arg0>1</arg0>
+        </jets:deleteCustomer>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:addCustomer>
+            <arg0>
+                <firstName>Soad</firstName>
+                <lastName>Ehab</lastName>
+                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+            </arg0>
+        </jets:addCustomer>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:updateCustomer>
+            <arg0>
+                <actorId>201</actorId>
+                <firstName>Soad</firstName>
+                <lastName>Selim</lastName>
+                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+            </arg0>
+        </jets:updateCustomer>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/customer HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getCustomerPayments>
+            <arg0>1</arg0>
+        </jets:getCustomerPayments>
+    </soap:Body>
+</soap:Envelope>

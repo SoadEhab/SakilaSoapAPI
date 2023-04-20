@@ -28,8 +28,8 @@ public class FilmService {
         return modelMapper.map(filmDao.getById(Film.class,id), FilmModel.class);
     }
 
-    public List<FilmModel> getFilmByTitle(int id){
-        return modelMapper.map(filmDao.getBy("Film.findByTitle","title",id), new TypeToken<List<FilmModel>>(){}.getType());
+    public List<FilmModel> getFilmByTitle(String title){
+        return modelMapper.map(filmDao.getBy("Film.findByTitle","title",title), new TypeToken<List<FilmModel>>(){}.getType());
     }
 
     public FilmModel addFilm(FilmModel filmModel){
@@ -72,7 +72,7 @@ public class FilmService {
         return modelMapper.map(filmDao.getFilmActors(filmId), new TypeToken<List<ActorModel>>(){}.getType());
     }
 
-    public List<InventoryModel> getFilmInventories(int filmId) {
+        public List<InventoryModel> getFilmInventories(int filmId) {
         return modelMapper.map(filmDao.getFilmInventories(filmId), new TypeToken<List<InventoryModel>>(){}.getType());
     }
 }

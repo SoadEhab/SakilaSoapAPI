@@ -13,7 +13,7 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
         FilmService filmService = new FilmService();
-        SakilaContext sakilaContext = new SakilaContext(new CustomerDao());
+//        SakilaContext sakilaContext = new SakilaContext(new CustomerDao());
 
 //        List<FilmModel> film = filmService.getAllFilms();
 //        System.out.println(film.get(20).getFilmCategoryList().size() + "--> " +film.get(2).getTitle());

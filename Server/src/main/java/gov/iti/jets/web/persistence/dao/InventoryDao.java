@@ -6,7 +6,7 @@ import gov.iti.jets.web.entities.Staff;
 
 import java.util.List;
 
-public class InventoryDao extends ISakila{
+public class InventoryDao extends SakilaContext{
     public List<Rental> getInventoryRentals(int inventoryId) {
         Inventory inventory = getById(Inventory.class, inventoryId);
         return inventory.getRentalList().stream().toList();

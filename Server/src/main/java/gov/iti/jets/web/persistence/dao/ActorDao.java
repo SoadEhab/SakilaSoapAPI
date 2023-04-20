@@ -4,7 +4,7 @@ import gov.iti.jets.web.entities.*;
 
 import java.util.List;
 
-public class ActorDao extends ISakila{
+public class ActorDao extends SakilaContext {
 
     public List<Film> getActorFilms(int actorId){
          Actor actor = getById(Actor.class, actorId);

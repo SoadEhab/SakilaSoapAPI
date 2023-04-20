@@ -4,7 +4,7 @@ import gov.iti.jets.web.entities.*;
 
 import java.util.List;
 
-public class StoreDao extends ISakila{
+public class StoreDao extends SakilaContext{
 
     public List<Inventory> getStoreInventories(int storeId) {
         Store store = getById(Store.class, storeId);

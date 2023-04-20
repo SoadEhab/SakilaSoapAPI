@@ -6,7 +6,7 @@ import jakarta.persistence.EntityManager;
 
 import java.util.List;
 
-public class CustomerDao extends ISakila{
+public class CustomerDao extends SakilaContext{
 
     public List<Rental> getCustomerRentals(int customerId){
         Customer customer = getById(Customer.class, customerId);

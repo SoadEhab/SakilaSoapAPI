@@ -6,7 +6,7 @@ import gov.iti.jets.web.entities.Staff;
 
 import java.util.List;
 
-public class RentalDao extends ISakila{
+public class RentalDao extends SakilaContext{
 
     public List<Payment> getRentalPayments(int rentalID) {
         Rental rental = getById(Rental.class, rentalID);

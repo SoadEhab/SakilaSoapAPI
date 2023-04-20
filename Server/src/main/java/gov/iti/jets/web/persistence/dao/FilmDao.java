@@ -3,7 +3,7 @@ package gov.iti.jets.web.persistence.dao;
 import gov.iti.jets.web.entities.*;
 import java.util.List;
 
-public class FilmDao extends ISakila {
+public class FilmDao extends SakilaContext {
 
     public List<Film> getFilmsByLanguage(int langId) {
         Language language = getById(Language.class, langId);

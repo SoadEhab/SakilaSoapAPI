@@ -4,7 +4,7 @@ import gov.iti.jets.web.entities.*;
 
 import java.util.List;
 
-public class StaffDao extends ISakila {
+public class StaffDao extends SakilaContext {
 
     public List<Rental> getStaffRentals(int staffId) {
         Staff staff = getById(Staff.class, staffId);

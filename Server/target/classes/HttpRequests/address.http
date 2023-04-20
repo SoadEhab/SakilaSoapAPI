@@ -50,9 +50,12 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addAddress>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <address>28 MySQL Boulevard</address>
+                <district>QLD</district>
+                <lastUpdate>2014-09-25T23:30:09+02:00</lastUpdate>
+                <location>AAAAAAEBAAAAjhDU34EkY0BO4IxQIqI7wA==</location>
+                <phone></phone>
+                <postalCode></postalCode>
             </arg0>
         </jets:addAddress>
     </soap:Body>
@@ -68,11 +71,14 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:updateAddress>
-            <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+           <arg0>
+                <addressId>2</addressId>
+                <address>27 MySQL Boulevard</address>
+                <district>QLD</district>
+                <lastUpdate>2014-09-25T23:30:09+02:00</lastUpdate>
+                <location>AAAAAAEBAAAAjhDU34EkY0BO4IxQIqI7wA==</location>
+                <phone>1291021208</phone>
+                <postalCode>2323</postalCode>
             </arg0>
         </jets:updateAddress>
     </soap:Body>

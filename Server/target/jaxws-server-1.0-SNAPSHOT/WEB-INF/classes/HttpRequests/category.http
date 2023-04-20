@@ -50,9 +50,8 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addCategory>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <lastUpdate>2006-02-15T04:46:27+02:00</lastUpdate>
+                <name>Animation</name>
             </arg0>
         </jets:addCategory>
     </soap:Body>
@@ -69,10 +68,9 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updateCategory>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <categoryId>17</categoryId>
+                <lastUpdate>2006-02-15T04:46:27+02:00</lastUpdate>
+                <name>Animations</name>
             </arg0>
         </jets:updateCategory>
     </soap:Body>

@@ -7,7 +7,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getStoreById>
-            <arg0>2</arg0>
+            <arg0>1</arg0>
         </jets:getStoreById>
     </soap:Body>
 </soap:Envelope>
@@ -50,9 +50,7 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addStore>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <lastUpdate>2006-02-15T04:57:12+02:00</lastUpdate>
             </arg0>
         </jets:addStore>
     </soap:Body>
@@ -69,10 +67,8 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updateStore>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <lastUpdate>2006-02-15T04:57:12+02:00</lastUpdate>
+                <storeId>2</storeId>
             </arg0>
         </jets:updateStore>
     </soap:Body>

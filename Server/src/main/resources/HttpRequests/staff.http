@@ -50,9 +50,12 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addStaff>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <active>true</active>
+                <email>Jon.Stephens@sakilastaff.com</email>
+                <firstName>Jon</firstName>
+                <lastName>Stephens</lastName>
+                <lastUpdate>2006-02-15T03:57:16+02:00</lastUpdate>
+                <username>Jon</username>
             </arg0>
         </jets:addStaff>
     </soap:Body>
@@ -69,10 +72,13 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updateStaff>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <active>true</active>
+                <email>Jon.Stephens@sakilastaff.com</email>
+                <firstName>Jon</firstName>
+                <lastName>Stephens</lastName>
+                <lastUpdate>2006-02-15T03:57:16+02:00</lastUpdate>
+                <staffId>2</staffId>
+                <username>Jon</username>
             </arg0>
         </jets:updateStaff>
     </soap:Body>

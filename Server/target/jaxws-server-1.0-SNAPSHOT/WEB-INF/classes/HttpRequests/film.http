@@ -65,9 +65,11 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addFilm>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <lastUpdate>2023-04-09T07:39:31+02:00</lastUpdate>
+                <rentalDuration>10</rentalDuration>
+                <rentalRate>0.90</rentalRate>
+                <replacementCost>2.99</replacementCost>
+                <title>ACADEMY</title>
             </arg0>
         </jets:addFilm>
     </soap:Body>
@@ -84,10 +86,12 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updateFilm>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <filmId>3</filmId>
+                <lastUpdate>2023-04-09T07:39:31+02:00</lastUpdate>
+                <rentalDuration>10</rentalDuration>
+                <rentalRate>0.90</rentalRate>
+                <replacementCost>2.99</replacementCost>
+                <title>ACADEMY</title>
             </arg0>
         </jets:updateFilm>
     </soap:Body>
@@ -116,7 +120,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getFilmsByOriginalLanguage>
-            <arg0>1</arg0>
+            <arg0>2</arg0>
         </jets:getFilmsByOriginalLanguage>
     </soap:Body>
 </soap:Envelope>
@@ -144,7 +148,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getFilmsByCategory>
-            <arg0>1</arg0>
+            <arg0>8</arg0>
         </jets:getFilmsByCategory>
     </soap:Body>
 </soap:Envelope>
@@ -158,7 +162,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getFilmCategories>
-            <arg0>1</arg0>
+            <arg0>8</arg0>
         </jets:getFilmCategories>
     </soap:Body>
 </soap:Envelope>
@@ -172,7 +176,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getFilmActors>
-            <arg0>1</arg0>
+            <arg0>7</arg0>
         </jets:getFilmActors>
     </soap:Body>
 </soap:Envelope>
@@ -186,7 +190,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getFilmInventories>
-            <arg0>1</arg0>
+            <arg0>7</arg0>
         </jets:getFilmInventories>
     </soap:Body>
 </soap:Envelope>

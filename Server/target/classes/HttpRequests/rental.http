@@ -50,9 +50,7 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addRental>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+            
             </arg0>
         </jets:addRental>
     </soap:Body>
@@ -69,10 +67,6 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updateRental>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
             </arg0>
         </jets:updateRental>
     </soap:Body>

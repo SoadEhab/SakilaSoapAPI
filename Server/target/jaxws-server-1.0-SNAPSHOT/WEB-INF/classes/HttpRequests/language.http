@@ -34,7 +34,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:deleteLanguage>
-            <arg0>1</arg0>
+            <arg0>2</arg0>
         </jets:deleteLanguage>
     </soap:Body>
 </soap:Envelope>
@@ -50,9 +50,8 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addLanguage>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <lastUpdate>2006-02-15T05:02:19+02:00</lastUpdate>
+                <name>Italian</name>
             </arg0>
         </jets:addLanguage>
     </soap:Body>
@@ -69,10 +68,9 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updateLanguage>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <languageId>8</languageId>
+                <lastUpdate>2006-02-15T05:02:19+02:00</lastUpdate>
+                <name>Italian</name>
             </arg0>
         </jets:updateLanguage>
     </soap:Body>

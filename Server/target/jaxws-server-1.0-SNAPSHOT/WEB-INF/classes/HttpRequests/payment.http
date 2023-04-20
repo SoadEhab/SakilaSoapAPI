@@ -7,7 +7,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:getPaymentById>
-            <arg0>2</arg0>
+            <arg0>35</arg0>
         </jets:getPaymentById>
     </soap:Body>
 </soap:Envelope>
@@ -34,7 +34,7 @@ Content-Type: text/xml
      xmlns:jets="http://services.web.jets.iti.gov/">
     <soap:Body>
         <jets:deletePayment>
-            <arg0>1</arg0>
+            <arg0>35</arg0>
         </jets:deletePayment>
     </soap:Body>
 </soap:Envelope>
@@ -50,9 +50,9 @@ Content-Type: text/xml
     <soap:Body>
         <jets:addPayment>
             <arg0>
-                <firstName>Soad</firstName>
-                <lastName>Ehab</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <amount>2.99</amount>
+                <lastUpdate>2006-02-15T22:12:30+02:00</lastUpdate>
+                <paymentDate>2005-07-10T06:31:24+03:00</paymentDate>
             </arg0>
         </jets:addPayment>
     </soap:Body>
@@ -69,10 +69,10 @@ Content-Type: text/xml
     <soap:Body>
         <jets:updatePayment>
             <arg0>
-                <actorId>201</actorId>
-                <firstName>Soad</firstName>
-                <lastName>Selim</lastName>
-                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+                <amount>2.99</amount>
+                <lastUpdate>2006-02-15T22:12:30+02:00</lastUpdate>
+                <paymentDate>2005-07-10T06:31:24+03:00</paymentDate>
+                <paymentId>36</paymentId>
             </arg0>
         </jets:updatePayment>
     </soap:Body>

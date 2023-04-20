@@ -3,11 +3,13 @@ package gov.iti.jets.web.services;
 import gov.iti.jets.web.entities.Address;
 import gov.iti.jets.web.models.AddressModel;
 import gov.iti.jets.web.persistence.dao.AddressDao;
+import jakarta.jws.WebService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
 import java.util.List;
 
+@WebService
 public class AddressService {
 
     AddressDao addressDao = new AddressDao();

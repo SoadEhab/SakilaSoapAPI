@@ -3,11 +3,13 @@ package gov.iti.jets.web.services;
 import gov.iti.jets.web.entities.Country;
 import gov.iti.jets.web.models.CountryModel;
 import gov.iti.jets.web.persistence.dao.CountryDao;
+import jakarta.jws.WebService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
 import java.util.List;
 
+@WebService
 public class CountryService {
     CountryDao countryDao = new CountryDao();
     ModelMapper modelMapper = new ModelMapper();

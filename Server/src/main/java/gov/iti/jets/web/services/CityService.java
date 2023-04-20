@@ -3,11 +3,13 @@ package gov.iti.jets.web.services;
 import gov.iti.jets.web.entities.City;
 import gov.iti.jets.web.models.CityModel;
 import gov.iti.jets.web.persistence.dao.CityDao;
+import jakarta.jws.WebService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
 import java.util.List;
 
+@WebService
 public class CityService {
     CityDao cityDao = new CityDao();
     ModelMapper modelMapper = new ModelMapper();

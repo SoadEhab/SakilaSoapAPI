@@ -3,11 +3,13 @@ package gov.iti.jets.web.services;
 import gov.iti.jets.web.entities.Payment;
 import gov.iti.jets.web.models.PaymentModel;
 import gov.iti.jets.web.persistence.dao.PaymentDao;
+import jakarta.jws.WebService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
 import java.util.List;
 
+@WebService
 public class PaymentService {
     PaymentDao paymentDao = new PaymentDao();
     ModelMapper modelMapper = new ModelMapper();

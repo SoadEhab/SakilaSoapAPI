@@ -1,0 +1,95 @@
+POST http://localhost:8090/sakila/rental HTTP/1.1
+Content-Type: text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getRentalById>
+            <arg0>2</arg0>
+        </jets:getRentalById>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/rental HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getAllRentals/>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/rental HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:deleteRental>
+            <arg0>1</arg0>
+        </jets:deleteRental>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/rental HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:addRental>
+            <arg0>
+                <firstName>Soad</firstName>
+                <lastName>Ehab</lastName>
+                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+            </arg0>
+        </jets:addRental>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/rental HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:updateRental>
+            <arg0>
+                <actorId>201</actorId>
+                <firstName>Soad</firstName>
+                <lastName>Selim</lastName>
+                <lastUpdate>2006-02-15T04:34:33+02:00</lastUpdate>
+            </arg0>
+        </jets:updateRental>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/rental HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getRentalPayments>
+            <arg0>1</arg0>
+        </jets:getRentalPayments>
+    </soap:Body>
+</soap:Envelope>
+

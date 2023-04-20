@@ -3,11 +3,13 @@ package gov.iti.jets.web.services;
 import gov.iti.jets.web.entities.Language;
 import gov.iti.jets.web.models.LanguageModel;
 import gov.iti.jets.web.persistence.dao.LanguageDao;
+import jakarta.jws.WebService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 
 import java.util.List;
 
+@WebService
 public class LanguageService {
 
     LanguageDao languageDao = new LanguageDao();

@@ -1,0 +1,77 @@
+POST http://localhost:8090/sakila/language HTTP/1.1
+Content-Type: text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getLanguageById>
+            <arg0>2</arg0>
+        </jets:getLanguageById>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/language HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getAllLanguages/>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/language HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:deleteLanguage>
+            <arg0>2</arg0>
+        </jets:deleteLanguage>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/language HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:addLanguage>
+            <arg0>
+                <lastUpdate>2006-02-15T05:02:19+02:00</lastUpdate>
+                <name>Italian</name>
+            </arg0>
+        </jets:addLanguage>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/language HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:updateLanguage>
+            <arg0>
+                <languageId>8</languageId>
+                <lastUpdate>2006-02-15T05:02:19+02:00</lastUpdate>
+                <name>Italian</name>
+            </arg0>
+        </jets:updateLanguage>
+    </soap:Body>
+</soap:Envelope>

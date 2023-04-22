@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.ActorService"
+                url-pattern="/sakila/actor" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.AddressService"
+                url-pattern="/sakila/address" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.CategoryService"
+                url-pattern="/sakila/category" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.CityService"
+                url-pattern="/sakila/city" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.CountryService"
+                url-pattern="/sakila/country" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.CustomerService"
+                url-pattern="/sakila/customer" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.FilmService"
+                url-pattern="/sakila/film" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.InventoryService"
+                url-pattern="/sakila/inventory" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.LanguageService"
+                url-pattern="/sakila/language" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.PaymentService"
+                url-pattern="/sakila/payment" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.RentalService"
+                url-pattern="/sakila/rental" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.StaffService"
+                url-pattern="/sakila/staff" />
+
+        <endpoint
+                name="SakilaService"
+                implementation="gov.iti.jets.web.services.StoreService"
+                url-pattern="/sakila/store" />
+
+</endpoints>

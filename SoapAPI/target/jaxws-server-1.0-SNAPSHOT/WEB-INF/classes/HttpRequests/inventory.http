@@ -1,0 +1,89 @@
+POST http://localhost:8090/sakila/inventory HTTP/1.1
+Content-Type: text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getInventoryById>
+            <arg0>9</arg0>
+        </jets:getInventoryById>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/inventory HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getAllInventories/>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/inventory HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:deleteInventory>
+            <arg0>10</arg0>
+        </jets:deleteInventory>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/inventory HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:addInventory>
+            <arg0>
+                <lastUpdate>2006-02-15T05:09:17+02:00</lastUpdate>
+            </arg0>
+        </jets:addInventory>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/inventory HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:updateInventory>
+            <arg0>
+                <inventoryId>19</inventoryId>
+                <lastUpdate>2006-02-15T05:09:17+02:00</lastUpdate>
+            </arg0>
+        </jets:updateInventory>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/inventory HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getInventoryRentals>
+            <arg0>133</arg0>
+        </jets:getInventoryRentals>
+    </soap:Body>
+</soap:Envelope>

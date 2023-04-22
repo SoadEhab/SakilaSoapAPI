@@ -1,0 +1,77 @@
+POST http://localhost:8090/sakila/city HTTP/1.1
+Content-Type: text/xml
+
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getCityById>
+            <arg0>2</arg0>
+        </jets:getCityById>
+    </soap:Body>
+</soap:Envelope>
+
+###
+POST http://localhost:8090/sakila/city HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:getAllCities/>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/city HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:deleteCity>
+            <arg0>1</arg0>
+        </jets:deleteCity>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/city HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:addCity>
+            <arg0>
+                <city>Abhaa</city>
+                <lastUpdate>2006-02-15T04:45:25+02:00</lastUpdate>
+            </arg0>
+        </jets:addCity>
+    </soap:Body>
+</soap:Envelope>
+
+
+###
+POST http://localhost:8090/sakila/city HTTP/1.1
+Content-Type: text/xml
+
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+     xmlns:jets="http://services.web.jets.iti.gov/">
+    <soap:Body>
+        <jets:updateCity>
+            <arg0>
+                <city>Abhaa</city>
+                <cityId>2</cityId>
+                <lastUpdate>2006-02-15T04:45:25+02:00</lastUpdate>
+            </arg0>
+        </jets:updateCity>
+    </soap:Body>
+</soap:Envelope>

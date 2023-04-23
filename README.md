@@ -7,14 +7,15 @@ The Sakila database is a nicely normalised schema modelling a DVD rental store f
 
 
 # Technologies used
+* Java 17
 * JAX-WS (Metro)
 * Maven
 * Tomcat
 * Jakarta persistance (Hibernate)
 * MySql
 * Intellij IDEA
-* Postman
-* SOAP-UI
+* REST Client
+
 
 # Endpoints
 
@@ -33,7 +34,6 @@ The Sakila database is a nicely normalised schema modelling a DVD rental store f
 | RentalService    | /sakila/rental    |
 | StaffService     | /sakila/staff     |
 | StoreService     | /sakila/store     |
-  
   
   
 # Run with Maven
